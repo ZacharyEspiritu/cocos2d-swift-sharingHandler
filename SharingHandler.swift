@@ -13,7 +13,7 @@ class SharingHandler: UIViewController {
     
     // MARK: Constants
     
-    let defaultURL: String = "https://itunes.apple.com/us/app/reaction-line-game-about-sorting/id1018598686?ls=1&mt=8"
+    let defaultURL: String = "INSERT_YOUR_ITUNES_URL_HERE"
     
     
     // MARK: Singleton
