@@ -39,7 +39,7 @@ class SharingHandler: UIViewController {
     func postToTwitter(#stringToPost: String, postWithScreenshot: Bool) {
         
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
-        
+            
             var twitterViewController: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             twitterViewController.setInitialText(stringToPost + " \(defaultURL)")
             
@@ -59,6 +59,12 @@ class SharingHandler: UIViewController {
             }
             
             CCDirector.sharedDirector().presentViewController(twitterViewController, animated: true, completion: nil)
+        } else {
+            var error = UIAlertView()
+            error.title = "ERROR"
+            error.message = "No Twitter Account Present"
+            error.addButtonWithTitle("Ok")
+            error.show()
         }
     }
     
@@ -97,6 +103,14 @@ class SharingHandler: UIViewController {
             }
             
             CCDirector.sharedDirector().presentViewController(facebookViewController, animated: true, completion: nil)
+        }else {
+            var error = UIAlertView()
+            error.title = "ERROR"
+            error.message = "No FaceBook Account Present"
+            error.addButtonWithTitle("Ok")
+            error.show()
+            
+            
         }
     }
     
