@@ -1,5 +1,5 @@
 # cocos2d-swift-sharingHandler
-A sample class that you can easily import into your cocos2d-Swift project to implement the `SLComposeViewController`, or a popup dialog that people can share your game from. 
+A sample class that you can easily import into your cocos2d-Swift project to implement the `SLComposeViewController`, an iOS-native popup dialog that people can share your game from. 
 
 ## Usage
 Import the file into your Source folder in your xCode project. There's no need to import any frameworks, at least with cocos2d implemented already.
