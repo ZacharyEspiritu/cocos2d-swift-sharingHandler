@@ -59,11 +59,12 @@ class SharingHandler: UIViewController {
             }
             
             CCDirector.sharedDirector().presentViewController(twitterViewController, animated: true, completion: nil)
-        } else {
+        }
+        else {
             var error = UIAlertView()
-            error.title = "ERROR"
-            error.message = "No Twitter Account Present"
-            error.addButtonWithTitle("Ok")
+            error.title = "No Twitter Account Available"
+            error.message = "You can add a Twitter account to share from in your Settings."
+            error.addButtonWithTitle("OK")
             error.show()
         }
     }
@@ -103,14 +104,13 @@ class SharingHandler: UIViewController {
             }
             
             CCDirector.sharedDirector().presentViewController(facebookViewController, animated: true, completion: nil)
-        }else {
+        }
+        else {
             var error = UIAlertView()
-            error.title = "ERROR"
-            error.message = "No FaceBook Account Present"
-            error.addButtonWithTitle("Ok")
+            error.title = "No Facebook Account Available"
+            error.message = "You can add a Facebook account to share from in your Settings."
+            error.addButtonWithTitle("OK")
             error.show()
-            
-            
         }
     }
     
