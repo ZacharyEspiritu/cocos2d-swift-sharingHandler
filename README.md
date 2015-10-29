@@ -1,4 +1,6 @@
 # cocos2d-swift-sharingHandler
+[![npm](https://img.shields.io/badge/status-working-brightgreen.svg)]() [![npm](https://img.shields.io/badge/cocos2d%20version-release--3.4.9--rc1-orange.svg)](https://github.com/cocos2d/cocos2d-objc/releases/tag/release-3.4.9-rc1) [![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/ZacharyEspiritu/cocos2d-swift-sharingHandler/blob/master/LICENSE)
+
 A sample class that you can easily import into your cocos2d-Swift project to implement the `SLComposeViewController`, an iOS-native popup dialog that people can share your game from. 
 
 ## Usage
